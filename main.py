@@ -88,6 +88,10 @@ housing_data = {
 
 # NOTE: There are dollars data in here
 df_housing_data = pd.DataFrame(data=housing_data)
-df_housing_data.to_csv("Apartments_for_rent_Lagos.csv", sep='\t', encoding='utf-8')
+df_housing_data.to_csv("Apartments_for_rent_Lagos.csv", sep=',', encoding='utf-8', index=False)
 
+
+# df_new = pd.read_csv("./Apartments_for_rent_Lagos.csv")
+#
+# print(df_new)
 
